@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var prefix = "$"
-var adminprefix = '$'
+var prefix = "*"
+var adminprefix = '*'
 
 
 //bc
@@ -23,7 +23,7 @@ client.on("message", message => {
 //bc online
 
 
-  var prefix = "$";
+  var prefix = "*";
 
   client.on("message", message => {
   
@@ -48,9 +48,9 @@ message.channel.send(`This avatar For ${user} link : ${user.avatarURL}`);
 
 client.on('ready',  () => {
     console.log('تم تشغيل :Broadcast  ');
-    console.log(`Logged in as * [ " ${client.user.username} " ] servers! [ " ${client.guilds.size} " ]`);
-    console.log(`Logged in as * [ " ${client.user.username} " ] Users! [ " ${client.users.size} " ]`);
-    console.log(`Logged in as * [ " ${client.user.username} " ] channels! [ " ${client.channels.size} " ]`);
+    console.log(`Logged in as * [ " ${client.user.username} " ] servers! [ " *{client.guilds.size} " ]`);
+    console.log(`Logged in as * [ " ${client.user.username} " ] Users! [ " *{client.users.size} " ]`);
+    console.log(`Logged in as * [ " ${client.user.username} " ] channels! [ " *{client.channels.size} " ]`);
   });
 
   client.on('message', message => {
@@ -78,11 +78,11 @@ m.sendMessage(args)
          .setThumbnail(message.author.avatarURL)
          .setDescription(`**Help|هيلب
 
-       $obc | لأرسال برود كاست للكل
+       *obc | لأرسال برود كاست للكل
 
-       $bc  |  لأرسال برود كاست للأونلاين
+       *bc  |  لأرسال برود كاست للأونلاين
 
-       $adminbc | برودكاست عادي
+       *adminbc | برودكاست عادي
 
        ** `)
    message.author.sendEmbed(embed)
